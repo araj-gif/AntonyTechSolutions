@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antony Tech Solutions - Innovating the Future</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  
+    <link href="css/site.css" rel="stylesheet">  
+   <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+            backdrop-filter: blur(10px); /* Blur effect */
+            position: fixed; /* Fix navbar at the top */
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000; /* Ensure navbar stays on top */
+            padding: 10px 0; /* Add some padding */
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+        .nav-link:hover {
+            color: #0d6efd !important; /* Add hover effect */
+        }
+        .hero {
+            position: relative;
+            height: 100vh;
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            padding-top: 70px; /* Add padding to account for fixed navbar */
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                height: 70vh; /* Adjust height for smaller screens */
+            }
+            .hero h1 {
+                font-size: 1.8rem; /* Smaller font size for smaller screens */
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            iframe {
+                height: 70vh; /* Adjust iframe height for smaller screens */
+            }
+        }
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 1.5rem; /* Further reduce font size for very small screens */
+            }
+            .hero p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/logomatching.png" alt="Antony Tech Solutions Logo" style="height: 40px; margin-right: 10px;">
+                Antony Tech Solutions
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="gradient-text">Innovating Tomorrow, Today</h1>
+            <p>Providing cutting-edge solutions for a smarter future.</p>
+            <a href="#services" class="btn btn-primary btn-lg mt-3">Explore Our Services</a>
+        </div>
+        <img src="images/laptopopen.jpg" alt="Hero Background" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
+        <!-- <iframe src='https://my.spline.design/chatgptkeyboard-333d7253469d611a0d77d1f73d57f1ed/' frameborder='0' allowfullscreen></iframe> -->
+    </section>
+
+    <section id="about" class="container py-5 text-center">
+        <h2>About Us</h2>
+        <p>Antony Tech Solutions is a leading provider of innovative technology solutions. We specialize in software development, automation, cloud integration, and AI-driven digital transformation. Our goal is to empower businesses with cutting-edge technology that enhances efficiency, security, and scalability.</p>
+    </section>
+    
+    <section id="services" class="container py-5">
+        <h2 class="text-center">Our Services</h2>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <i class="fas fa-code feature-icon"></i>
+                <h4>Software Development</h4>
+                <p>Custom web and mobile applications tailored to your business needs.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-cogs feature-icon"></i>
+                <h4>Automation Solutions</h4>
+                <p>AI-powered automation to optimize business processes and efficiency.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-cloud feature-icon"></i>
+                <h4>Cloud Integration</h4>
+                <p>Seamless migration and integration of cloud-based solutions.</p>
+            </div>
+        </div>
+        <div class="row text-center mt-4">
+            <div class="col-md-4">
+                <i class="fas fa-shield-alt feature-icon"></i>
+                <h4>Cybersecurity</h4>
+                <p>Advanced security solutions to protect your digital assets.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-chart-line feature-icon"></i>
+                <h4>Data Analytics</h4>
+                <p>Transform raw data into actionable insights using AI-powered analytics.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-robot feature-icon"></i>
+                <h4>AI & Machine Learning</h4>
+                <p>Implementing smart AI solutions to revolutionize your business.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="container py-5 text-center">
+        <h2>Contact Us</h2>
+        <p>Email: contact@antonysolutions.com</p>
+        <p>Phone: +971-123-4567</p>
+        <div class="social-icons mt-3">
+            <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <p>&copy; 2025 Antony Tech Solutions. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
